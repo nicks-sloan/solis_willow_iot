@@ -1,0 +1,280 @@
+/*!
+\page LPTMR0 LPTMR0 (Init_LPTMR)
+**          This file implements the LPTMR (LPTMR0) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+
+- \subpage LPTMR0_settings
+- \subpage LPTMR0_regs_overview  
+- \subpage LPTMR0_regs_details
+- \ref LPTMR0_module "Component documentation" 
+
+\page LPTMR0_regs_overview Registers Initialization Overview
+This page initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">LPTMR0 Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+<tr><td>0x40048038</td><td>SIM_SCGC5</td><td>
+    0x00000001
+ </td><td>SIM_SCGC5 register, peripheral LPTMR0.</td></tr>
+<tr><td>0x40040000</td><td>LPTMR0_CSR</td><td>
+    0x000000C1
+ </td><td>LPTMR0_CSR register, peripheral LPTMR0.</td></tr>
+<tr><td>0x40040008</td><td>LPTMR0_CMR</td><td>
+    0x000003E8
+ </td><td>LPTMR0_CMR register, peripheral LPTMR0.</td></tr>
+<tr><td>0x40040004</td><td>LPTMR0_PSR</td><td>
+    0x00000005
+ </td><td>LPTMR0_PSR register, peripheral LPTMR0.</td></tr>
+</table>
+<br/>
+\page LPTMR0_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+<div class="reghdr1">SIM_SCGC5</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">PORTE</td><td colspan="1" rowspan="2">PORTD</td><td colspan="1" rowspan="2">PORTC</td>
+<td colspan="1" rowspan="2">PORTB</td><td colspan="1" rowspan="2">PORTA</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">TSI</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">LPTMR</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40048038</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000001</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000182</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>13</td><td>PORTE</td><td>0x00</td><td>Port E Clock Gate Control</td>
+<tr><td>12</td><td>PORTD</td><td>0x00</td><td>Port D Clock Gate Control</td>
+<tr><td>11</td><td>PORTC</td><td>0x00</td><td>Port C Clock Gate Control</td>
+<tr><td>10</td><td>PORTB</td><td>0x00</td><td>Port B Clock Gate Control</td>
+<tr><td>9</td><td>PORTA</td><td>0x00</td><td>Port A Clock Gate Control</td>
+<tr><td>5</td><td>TSI</td><td>0x00</td><td>TSI Access Control</td>
+<tr><td>0</td><td>LPTMR</td><td>0x01</td><td>Low Power Timer Access Control</td>
+</tr></table>
+<div class="reghdr1">LPTMR0_CSR</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">TCF</td>
+<td colspan="1" rowspan="2">TIE</td><td colspan="2" rowspan="2">TPS</td><td colspan="1" rowspan="2">TPP</td>
+<td colspan="1" rowspan="2">TFC</td><td colspan="1" rowspan="2">TMS</td><td colspan="1" rowspan="2">TEN</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40040000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x000000C1</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>7</td><td>TCF</td><td>0x01</td><td>Timer Compare Flag</td>
+<tr><td>6</td><td>TIE</td><td>0x01</td><td>Timer Interrupt Enable</td>
+<tr><td>4 - 5</td><td>TPS</td><td>0x00</td><td>Timer Pin Select</td>
+<tr><td>3</td><td>TPP</td><td>0x00</td><td>Timer Pin Polarity</td>
+<tr><td>2</td><td>TFC</td><td>0x00</td><td>Timer Free-Running Counter</td>
+<tr><td>1</td><td>TMS</td><td>0x00</td><td>Timer Mode Select</td>
+<tr><td>0</td><td>TEN</td><td>0x01</td><td>Timer Enable</td>
+</tr></table>
+<div class="reghdr1">LPTMR0_CMR</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="16" rowspan="2">COMPARE</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40040008</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x000003E8</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>0 - 15</td><td>COMPARE</td><td>0x00</td><td>Compare Value</td>
+</tr></table>
+<div class="reghdr1">LPTMR0_PSR</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="4" rowspan="2">PRESCALE</td><td colspan="1" rowspan="2">PBYP</td><td colspan="2" rowspan="2">PCS</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40040004</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000005</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>3 - 6</td><td>PRESCALE</td><td>0x00</td><td>Prescale Value</td>
+<tr><td>2</td><td>PBYP</td><td>0x01</td><td>Prescaler Bypass</td>
+<tr><td>0 - 1</td><td>PCS</td><td>0x00</td><td>Prescaler Clock Select</td>
+</tr></table>
+*/
+/*!
+\page LPTMR0_settings Component Settings
+\code
+**          Component name                                 : LPTMR0
+**          Device                                         : LPTMR0
+**          Settings                                       : 
+**            Clock gate                                   : Enabled
+**            Clock settings                               : 
+**              Clock select                               : Internal 1 kHz LPO
+**              Prescale value/Glitch filter               : Prescaler/2; Glitch Filter not supported
+**              Prescaler bypass                           : Bypassed
+**            Compare value                                : 1000
+**            Free running                                 : Disabled
+**            Timer mode                                   : Timer Counter
+**              Input clock frequency                      : 1 kHz
+**              Period                                     : 1001.0000 ms
+**          Pins                                           : 
+**            Input pin                                    : Disabled
+**            Pin polarity                                 : Active High
+**          Interrupts                                     : 
+**            Interrupt                                    : INT_LPTimer
+**            Interrupt request                            : Enabled
+**            Interrupt priority                           : 0 (Highest)
+**            ISR name                                     : LPTmr
+**            Timer interrupt                              : Enabled
+**          Initialization                                 : 
+**            Timer enable                                 : yes
+**            Call Init method                             : yes
+\endcode
+*/

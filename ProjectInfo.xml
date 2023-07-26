@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKL16Z128xxx4</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M0+</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>16k</SRAMsize>
+    <FLASHsize>128k</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <IncludePaths>
+      <Path>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\</Path>
+      <Path>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\iofiles\</Path>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\</Path>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\</Path>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Project_Settings\Startup_Code\</Path>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\</Path>
+      <Path>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AD1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AS1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AdcLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BatteryCheck.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BatteryMidCheck.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd10.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd11.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd12.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd2.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd3.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd4.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd5.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd6.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd7.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd8.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd9.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BleXres.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\COMCable.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\Cpu.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\ExtIntLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IFsh1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IRDRV.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IRRecPwr.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IntFlashLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LATCH.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LED.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LPTMR0.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LatchCheck.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LatchCurrent.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\MCUC1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\Sentinel.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\SolarCheck.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TButton.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TI1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TU1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TimerIntLdd1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UNLATCH.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UTIL1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UartWake.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UartWakeInt.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\Vectors.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\WDog1.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Project_Settings\Startup_Code\__arm_end.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Project_Settings\Startup_Code\__arm_start.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Ant.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\BLE.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Events.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\IRSensor.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\NCP_Helpers.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Operation.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\PowerSupply.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\SystemInit.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Timing.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\TouchSensor.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\UART.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\boot.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\main.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\sa_mtb.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcCRC8.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcClient.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcClientWeakImpl.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcInfra.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcInfraUart.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcUartFraming.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\MessageBuffer.c</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\MessageWriter.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AD1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AS1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\AdcLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BatteryCheck.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BatteryMidCheck.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd10.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd11.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd12.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd2.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd3.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd4.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd5.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd6.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd7.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd8.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BitIoLdd9.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\BleXres.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\COMCable.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\Cpu.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\ExtIntLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IFsh1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IO_Map.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IRDRV.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IRRecPwr.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\IntFlashLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LATCH.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LED.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LPTMR0.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LatchCheck.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\LatchCurrent.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\MCUC1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\MCUC1config.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\PE_Const.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\PE_Error.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\PE_LDD.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\Sentinel.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\SolarCheck.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TButton.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TI1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TU1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\TimerIntLdd1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UNLATCH.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UTIL1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UTIL1config.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UartWake.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\UartWakeInt.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Generated_Code\WDog1.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Project_Headers\bme.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Project_Settings\Startup_Code\runtime_configuration.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Ant.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\BLE.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Events.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\IRSensor.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Mcu_cast_type.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\NCP_Helpers.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Operation.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\PowerSupply.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\SystemInit.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\Timing.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\TouchSensor.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\UART.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\boot.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\hardware.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpc.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcCRC8.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcClient.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcConfig.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcInfraArduino.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcServer.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\BlynkRpcUartFraming.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\MessageBuffer.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\MessageWriter.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\compat\LibSerialPort.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_handler_blynk.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_handler_client.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_handler_hw.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_handler_mcu.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_handler_ncp.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_shim_blynk.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_shim_client.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_shim_hw.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_shim_mcu.h</PathName>
+      <PathName>C:\workspaceCW\Solis_G2_Bat_IOT\Solis_Willow\Sources\src\idl\rpc_shim_ncp.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\iofiles\MKL16Z4.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\ADC_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\CMP_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\COP_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\DAC_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\DMAMUX_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\DMA_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\FTFA_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\GPIO_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\I2C_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\LPTMR_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\MCM_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\PDD_Types.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\PIT_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\PORT_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\RTC_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\SAI_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\SIM_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\SPI_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\SysTick_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\TPM_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\UART0_PDD.h</PathName>
+      <PathName>C:\Freescale\CW MCU v11.0\MCU\ProcessorExpert\lib\Kinetis\pdd\inc\UART_PDD.h</PathName>
+    </GeneratedHs>
+  </FILES>
+  <OPTIONS>
+  </OPTIONS>
+</export>

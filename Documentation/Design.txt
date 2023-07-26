@@ -1,0 +1,78 @@
+Change Log:
+
+9/5/2019
+
+Start a new project for SolisBLE_Newcover, it includes SolisCR, BLE and new cover. Software version 04.00.
+Creat new files BLE.c and BLE.h. all BLE related funtions.
+
+9/11/2019
+
+change the process for start if communication is connected.
+Moved flag GVbBLEEnabled to ProcessingSingleBLECommand() from BLEProcess(). This flag was possiblely set wrongly and couldn't be cleared.
+
+9/23/2019
+
+Swap BleWake pin from PTA4(pin14) to PTC6(pin27) for new hardware. Software version 04.01
+
+9/24/2019
+
+Reset software version to 00.01
+
+10/01/2019
+For BLE units, remove the feature of touching both buttons to change Grand/normal mode. 
+
+10/15/2019
+For Old cover. TSI parameters changed for old cover
+
+11/11/2019
+
+start version 00.02 after first release to andover 00.01 on 11/05/2019
+
+11/21/2019
+Fix a bug. Flush on time didn't update after configurator set the SKU.
+
+12/13/2019
+
+Start version 00.03.  to implement inputs board information from test mode
+
+1/15/2020
+Change to all default operation parameter depends on SKU
+
+2/24/2020
+Start version 00.04
+Reconfige the UART0 clock source to IRCLK so it can work in spleep mode to save the power
+
+2/26/2020
+Modified Handwave detecting
+
+3/3/2020
+Changed project name as Solis_All.  Combine BLE and Non_BLE together
+
+7/28/2020
+Change Solis_all BLE wake up pin to bidirectional and interrupt  -- Sheng deng
+
+7/30/2020
+Change BleWake to UartWake and UartWakeInt    
+Change LLWU setting on external pin 10 to falling on PTC6 on Cpu hardware -- Sheng Deng
+
+6/22/2022
+start version 00.08 by Scott Wang
+	1.disable occupancy 
+	2. Add SKU for 2.4 GPF closet
+	
+3/16/2023
+Start version 0101 for new hardware of adding a mid point battery read for detecting bad battery
+
+4/10/2023
+version 0103
+
+4/13/2023
+release version 0108
+
+4/26/2023
+
+fixed the issue of NVsOpPara.MinUserTH was wrong in SetSensingRange
+
+7/11/2023
+Version 111
+Remove shipping flag to flash to fix flash corruption on battery installation

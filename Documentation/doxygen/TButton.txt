@@ -1,0 +1,293 @@
+/*!
+\page TButton TButton (Init_TSI)
+**          This file implements the TSI (TSI0) module initialization
+**          according to the Peripheral Initialization settings, and
+**          defines interrupt service routines prototypes.
+
+- \subpage TButton_settings
+- \subpage TButton_regs_overview  
+- \subpage TButton_regs_details
+- \ref TButton_module "Component documentation" 
+
+\page TButton_regs_overview Registers Initialization Overview
+This page initialization values for the registers of the peripheral(s) configured
+by the component. 
+<table>
+<tr><td colspan="4" class="ttitle1">TButton Initialization</td></tr>
+<tr><td class="ttitle2">Address</td><td class="ttitle2">Register</td><td class="ttitle2">Register Value</td><td class="ttitle2">Register Description</td></tr>
+<tr><td>0x40048038</td><td>SIM_SCGC5</td><td>
+    0x00000021
+ </td><td>SIM_SCGC5 register, peripheral TButton.</td></tr>
+<tr><td>0x40045000</td><td>TSI0_GENCS</td><td>
+    0x8C6000A4
+ </td><td>TSI0_GENCS register, peripheral TButton.</td></tr>
+<tr><td>0x40045008</td><td>TSI0_TSHD</td><td>
+    0x00000000
+ </td><td>TSI0_TSHD register, peripheral TButton.</td></tr>
+<tr><td>0x40045004</td><td>TSI0_DATA</td><td>
+    0x00000000
+ </td><td>TSI0_DATA register, peripheral TButton.</td></tr>
+</table>
+<br/>
+\page TButton_regs_details Register Initialization Details
+This page contains detailed description of initialization values for the 
+registers of the peripheral(s) configured by the component. 
+
+<div class="reghdr1">SIM_SCGC5</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">PORTE</td><td colspan="1" rowspan="2">PORTD</td><td colspan="1" rowspan="2">PORTC</td>
+<td colspan="1" rowspan="2">PORTB</td><td colspan="1" rowspan="2">PORTA</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">TSI</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">LPTMR</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40048038</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000021</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000182</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>13</td><td>PORTE</td><td>0x00</td><td>Port E Clock Gate Control</td>
+<tr><td>12</td><td>PORTD</td><td>0x00</td><td>Port D Clock Gate Control</td>
+<tr><td>11</td><td>PORTC</td><td>0x00</td><td>Port C Clock Gate Control</td>
+<tr><td>10</td><td>PORTB</td><td>0x00</td><td>Port B Clock Gate Control</td>
+<tr><td>9</td><td>PORTA</td><td>0x00</td><td>Port A Clock Gate Control</td>
+<tr><td>5</td><td>TSI</td><td>0x01</td><td>TSI Access Control</td>
+<tr><td>0</td><td>LPTMR</td><td>0x01</td><td>Low Power Timer Access Control</td>
+</tr></table>
+<div class="reghdr1">TSI0_GENCS</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="1" rowspan="2">OUTRGF</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">ESOR</td><td colspan="4" rowspan="2">MODE</td>
+<td colspan="3" rowspan="2">REFCHRG</td><td colspan="2" rowspan="2">DVOLT</td><td colspan="3" rowspan="2">EXTCHRG</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="3" rowspan="2">PS</td><td colspan="5" rowspan="2">NSCN</td>
+<td colspan="1" rowspan="2">TSIEN</td><td colspan="1" rowspan="2">TSIIEN</td><td colspan="1" rowspan="2">STPE</td>
+<td colspan="1" rowspan="2">STM</td><td colspan="1" rowspan="1">SCNIP</td><td colspan="1" rowspan="2">EOSF</td>
+<td colspan="1" rowspan="2">CURSW</td><td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+<td colspan="1"></td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40045000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x8C6000A4</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>31</td><td>OUTRGF</td><td>0x01</td><td>Out of Range Flag</td>
+<tr><td>28</td><td>ESOR</td><td>0x00</td><td>End-of-scan or Out-of-Range Interrupt Selection</td>
+<tr><td>24 - 27</td><td>MODE</td><td>0x08</td><td>TSI analog modes setup and status bits</td>
+<tr><td>21 - 23</td><td>REFCHRG</td><td>0x00</td><td>REFCHRG</td>
+<tr><td>19 - 20</td><td>DVOLT</td><td>0x00</td><td>DVOLT</td>
+<tr><td>16 - 18</td><td>EXTCHRG</td><td>0x00</td><td>EXTCHRG</td>
+<tr><td>13 - 15</td><td>PS</td><td>0x00</td><td>PS</td>
+<tr><td>8 - 12</td><td>NSCN</td><td>0x00</td><td>NSCN</td>
+<tr><td>7</td><td>TSIEN</td><td>0x01</td><td>Touch Sensing Input Module Enable</td>
+<tr><td>6</td><td>TSIIEN</td><td>0x00</td><td>Touch Sensing Input Interrupt Enable</td>
+<tr><td>5</td><td>STPE</td><td>0x01</td><td>TSI STOP Enable</td>
+<tr><td>4</td><td>STM</td><td>0x00</td><td>Scan Trigger Mode</td>
+<tr><td>3</td><td>SCNIP</td><td>0x00</td><td>Scan In Progress Status</td>
+<tr><td>2</td><td>EOSF</td><td>0x01</td><td>End of Scan Flag</td>
+<tr><td>1</td><td>CURSW</td><td>0x00</td><td>CURSW</td>
+</tr></table>
+<div class="reghdr1">TSI0_TSHD</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="16" rowspan="2">THRESH</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="16" rowspan="2">THRESL</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40045008</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>16 - 31</td><td>THRESH</td><td>0x00</td><td>TSI Wakeup Channel High-threshold</td>
+<tr><td>0 - 15</td><td>THRESL</td><td>0x00</td><td>TSI Wakeup Channel Low-threshold</td>
+</tr></table>
+<div class="reghdr1">TSI0_DATA</div>
+<div class="regdiag">
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td>
+<td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="4" rowspan="2">TSICH</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">DMAEN</td><td colspan="1"></td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td><td colspan="1" rowspan="2">-</td>
+<td colspan="1" rowspan="2">-</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+<td colspan="1">SWTS</td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+<table class="regtbl">
+<tr class="trd1r">
+<td class="trd1c">Bit</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td>
+<td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td>
+</tr>
+<tr>
+<td class="trd1c">R</td><td colspan="16" rowspan="1">TSICNT</td>
+</tr>
+<tr>
+<td class="trd1c">W</td>
+<td colspan="16"></td>
+</tr>
+<tr class="trd1r">
+<td class="trd1c">Reset</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</table>
+        
+</div>
+<table class="regtbl2"><tr><td class="trowtit" colspan="2">Address</td><td colspan="2">0x40045004</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">Initial value</td><td colspan="2">0x00000000</td></tr>
+<tr class="trowtit"><td  class="trowtit" colspan="2">After-reset value</td><td colspan="2">0x00000000</td></tr>
+<tr><td class="ttitle2">Bit</td><td class="ttitle2">Field</td><td class="ttitle2">Value</td><td class="ttitle2">Description</td></tr>
+<tr><td>28 - 31</td><td>TSICH</td><td>0x00</td><td>TSICH</td>
+<tr><td>23</td><td>DMAEN</td><td>0x00</td><td>DMA Transfer Enabled</td>
+<tr><td>22</td><td>SWTS</td><td>0x00</td><td>Software Trigger Start</td>
+<tr><td>0 - 15</td><td>TSICNT</td><td>0x00</td><td>TSI Conversion Counter Value</td>
+</tr></table>
+*/
+/*!
+\page TButton_settings Component Settings
+\code
+**          Component name                                 : TButton
+**          Device                                         : TSI0
+**          Settings                                       : 
+**            Clock gate                                   : Enabled
+**            Num of Scan times per electrode              : 1
+**            Electrode oscillator prescaler               : divide by 1
+**            Trigger Mode                                 : Software trigger
+**            Ref. OSC charge current                      : 4 uA
+**            External OSC charge current                  : 0.5 uA
+**            Current source pair swap                     : no
+**            Delta voltage                                : 1.03 V
+**            Analog mode                                  : Automatic noise detection
+**            Low power settings                           : 
+**              TSI enabled in Low Power Modes             : yes
+**              Touch sensing low threshold                : 0
+**              Touch sensing high threshold               : 0
+**          Pins                                           : 
+**            Input 0                                      : Enabled
+**              Pin                                        : ADC0_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/TPM1_CH0
+**              Pin signal                                 : Button
+**            Input 1                                      : Disabled
+**            Input 2                                      : Disabled
+**            Input 3                                      : Disabled
+**            Input 4                                      : Disabled
+**            Input 5                                      : Disabled
+**            Input 6                                      : Disabled
+**          Interrupts/DMA                                 : 
+**            Interrupt                                    : INT_TSI0
+**            Interrupt request                            : Disabled
+**            Interrupt priority                           : 0 (Highest)
+**            ISR Name                                     : 
+**            Touch sensing input interrupt                : Disabled
+**            Touch sensing interrupt type                 : Out of range
+**            DMA request                                  : Disabled
+**          Initialization                                 : 
+**            Initial channel select                       : Channel 0
+**            Touch Sensing Input                          : Enabled
+**            Call Init method                             : yes
+\endcode
+*/
