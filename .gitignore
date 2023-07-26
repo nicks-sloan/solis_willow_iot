@@ -5,3 +5,5 @@
 /FLASH/*.elf
 /FLASH/*.hex
 /FLASH/*.lst
+/FLASH/Generated_Code
+/FLASH
