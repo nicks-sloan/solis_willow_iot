@@ -6,7 +6,7 @@
 
 /* Fill in information from your Blynk Template here */
 /* Read more: https://bit.ly/BlynkInject */
-#define BLYNK_TEMPLATE_ID           "TMP000001"
+#define BLYNK_TEMPLATE_ID           "TMPL2wYwAWFl2"
 #define BLYNK_TEMPLATE_NAME         "Bottle Filler"
 
 #define BLYNK_FIRMWARE_VERSION        "0.1.0"

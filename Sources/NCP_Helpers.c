@@ -22,7 +22,8 @@ int rpc_uart_read(void) {
 
 size_t rpc_uart_write(uint8_t data) {
   // Put a byte to the UART output buffer
-  return AS1_SendChar(data); 
+	AS1_SendChar(data);
+	return 1; 
 }
 
 void rpc_uart_flush(void) {
