@@ -1,0 +1,7 @@
+/FLASH/*.map
+/FLASH/*.mk
+/FLASH/*.local
+/FLASH/*.args
+/FLASH/*.elf
+/FLASH/*.hex
+/FLASH/*.lst
